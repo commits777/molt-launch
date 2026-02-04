@@ -8,7 +8,7 @@
         "id": "t1",
         "title": "Improve Dashboard UI",
         "assignee": "Pixel",
-        "status": "blocked",
+        "status": "active",
         "subtasks": [
           {
             "title": "Redesign agent cards",
@@ -30,8 +30,7 @@
             "details": "Enable data export in CSV and JSON formats",
             "status": "active"
           }
-        ],
-        "blocking_reason": "Manually blocked by admin request"
+        ]
       }
     ]
   },
@@ -44,7 +43,7 @@
         "id": "t8",
         "title": "Implement 10-Minute Reporting System",
         "assignee": "Spark",
-        "status": "blocked",
+        "status": "active",
         "subtasks": [
           {
             "title": "Verify cron scheduling",
@@ -66,8 +65,7 @@
             "details": "Refine the summary format and content for better readability",
             "status": "active"
           }
-        ],
-        "blocking_reason": "Manually blocked by admin request"
+        ]
       }
     ]
   },
@@ -80,7 +78,7 @@
         "id": "t3",
         "title": "Implement Audit Logging",
         "assignee": "Guard",
-        "status": "blocked",
+        "status": "active",
         "subtasks": [
           {
             "title": "Define audit trail schema",
@@ -92,8 +90,7 @@
             "details": "Add comprehensive logging for all user actions",
             "status": "active"
           }
-        ],
-        "blocking_reason": "Manually blocked by admin request"
+        ]
       },
       {
         "id": "t6",
@@ -121,10 +118,7 @@
             "details": "Perform final security review after implementing fixes",
             "status": "completed"
           }
-        ],
-        "completion_note": "completed before proof enforcement",
-        "last_update": "2026-02-03T19:30:49+00:00",
-        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/t6/proof.json"
+        ]
       }
     ]
   },
@@ -137,7 +131,7 @@
         "id": "t4",
         "title": "Agent Template System",
         "assignee": "Spark",
-        "status": "blocked",
+        "status": "active",
         "subtasks": [
           {
             "title": "Create template generator",
@@ -149,8 +143,7 @@
             "details": "Allow sharing and reuse of agent templates",
             "status": "active"
           }
-        ],
-        "blocking_reason": "Manually blocked by admin request"
+        ]
       }
     ]
   },
@@ -185,41 +178,7 @@
             "details": "Redirect old Cloudflare URLs to new GitHub Pages URL",
             "status": "completed"
           }
-        ],
-        "completion_note": "completed before proof enforcement",
-        "last_update": "2026-02-03T19:30:49+00:00",
-        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/t5/proof.json"
-      },
-      {
-        "id": "dashboard-recovery-20260202",
-        "title": "Dashboard Recovery",
-        "assignee": "Watchdog",
-        "status": "completed",
-        "subtasks": [
-          {
-            "title": "Diagnose dashboard unavailability",
-            "details": "Investigate DNS NXDOMAIN error for dashboard URL",
-            "status": "completed"
-          },
-          {
-            "title": "Check cloud infrastructure",
-            "details": "Verify cloudflared and Python dashboard processes are running",
-            "status": "completed"
-          },
-          {
-            "title": "Attempt tunnel restart",
-            "details": "Restart Cloudflare tunnel using cloudflared --url http://localhost:8000, created new tunnel URL: https://railway-lite-debian-ratings.trycloudflare.com",
-            "status": "completed"
-          },
-          {
-            "title": "Verify recovery success",
-            "details": "Confirmed new tunnel URL returns HTTP 200; dashboard now accessible",
-            "status": "completed"
-          }
-        ],
-        "completion_note": "System reported HEALTHY on 2026-02-04T09:42:17Z; dashboard accessible.",
-        "last_update": "2026-02-04T09:57:00Z",
-        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/dashboard-recovery-20260202/proof.json"
+        ]
       }
     ]
   },
@@ -232,7 +191,7 @@
         "id": "t7",
         "title": "Moltbook Community Outreach",
         "assignee": "Moltbook Scout",
-        "status": "blocked",
+        "status": "active",
         "subtasks": [
           {
             "title": "Identify relevant discussions",
@@ -242,64 +201,14 @@
           {
             "title": "Engage with community",
             "details": "Respond to posts and initiate conversations about Moltbook",
-            "status": "blocked"
+            "status": "in-progress"
           },
           {
             "title": "Report engagement metrics",
             "details": "Track and report community engagement KPIs",
             "status": "active"
           }
-        ],
-        "blocking_reason": "Manually blocked by admin request"
-      }
-    ]
-  },
-  {
-    "id": "inbox",
-    "name": "Inbox",
-    "description": "Auto-ingested tasks",
-    "tasks": [
-      {
-        "id": "tg-eaca0724",
-        "title": "Reduce OpenClaw memory usage",
-        "assignee": "Spark",
-        "status": "completed",
-        "priority": "High",
-        "source": "telegram",
-        "created_at": "2026-02-03T20:05:49.355316+00:00",
-        "completed_at": "2026-02-03T20:06:30.123456+00:00",
-        "subtasks": []
-      },
-      {
-        "id": "tg-acffda81",
-        "title": "Restart-safety test (telegram intake)",
-        "assignee": "Spark",
-        "status": "blocked",
-        "priority": "Low",
-        "source": "telegram",
-        "created_at": "2026-02-03T20:14:52.629386+00:00",
-        "subtasks": [],
-        "blocking_reason": "Manually blocked by admin request"
-      },
-      {
-        "id": "t12",
-        "title": "Imported proof task t12",
-        "assignee": "Spark",
-        "status": "completed",
-        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/t12/proof.json",
-        "source": "system",
-        "created_at": "2026-02-03T21:43:14.367122+00:00",
-        "last_update": "2026-02-03T21:43:14.367158+00:00"
-      },
-      {
-        "id": "t13",
-        "title": "Imported proof task t13",
-        "assignee": "Spark",
-        "status": "completed",
-        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/t13/proof.json",
-        "source": "system",
-        "created_at": "2026-02-03T21:43:14.367167+00:00",
-        "last_update": "2026-02-03T21:43:14.367171+00:00"
+        ]
       }
     ]
   }
