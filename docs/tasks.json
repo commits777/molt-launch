@@ -1,0 +1,306 @@
+[
+  {
+    "id": "1",
+    "name": "Platform Development",
+    "description": "Core platform features and improvements",
+    "tasks": [
+      {
+        "id": "t1",
+        "title": "Improve Dashboard UI",
+        "assignee": "Pixel",
+        "status": "blocked",
+        "subtasks": [
+          {
+            "title": "Redesign agent cards",
+            "details": "Modernize the agent display cards with better visual hierarchy",
+            "status": "completed"
+          },
+          {
+            "title": "Add metrics dashboard",
+            "details": "Create overview metrics section with key performance indicators",
+            "status": "active"
+          },
+          {
+            "title": "Implement dark mode",
+            "details": "Ensure consistent dark theme throughout the application",
+            "status": "active"
+          },
+          {
+            "title": "Add export functionality",
+            "details": "Enable data export in CSV and JSON formats",
+            "status": "active"
+          }
+        ],
+        "blocking_reason": "Manually blocked by admin request"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Reporting System",
+    "description": "Monitor and optimize the 10-minute reporting system",
+    "tasks": [
+      {
+        "id": "t8",
+        "title": "Implement 10-Minute Reporting System",
+        "assignee": "Spark",
+        "status": "blocked",
+        "subtasks": [
+          {
+            "title": "Verify cron scheduling",
+            "details": "Confirm the 10-minute cron job is running correctly",
+            "status": "active"
+          },
+          {
+            "title": "Test message delivery",
+            "details": "Ensure summary messages are being sent to the correct channel",
+            "status": "active"
+          },
+          {
+            "title": "Monitor system stability",
+            "details": "Track system performance and resource usage",
+            "status": "active"
+          },
+          {
+            "title": "Optimize message content",
+            "details": "Refine the summary format and content for better readability",
+            "status": "active"
+          }
+        ],
+        "blocking_reason": "Manually blocked by admin request"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Security Enhancement",
+    "description": "Improve platform security and compliance",
+    "tasks": [
+      {
+        "id": "t3",
+        "title": "Implement Audit Logging",
+        "assignee": "Guard",
+        "status": "blocked",
+        "subtasks": [
+          {
+            "title": "Define audit trail schema",
+            "details": "Create standardized schema for audit logs",
+            "status": "active"
+          },
+          {
+            "title": "Implement logging middleware",
+            "details": "Add comprehensive logging for all user actions",
+            "status": "active"
+          }
+        ],
+        "blocking_reason": "Manually blocked by admin request"
+      },
+      {
+        "id": "t6",
+        "title": "Smart Contract Audit",
+        "assignee": "Forge",
+        "status": "completed",
+        "subtasks": [
+          {
+            "title": "Audit DividendVault.sol",
+            "details": "Complete security audit of DividendVault.sol contract",
+            "status": "completed"
+          },
+          {
+            "title": "Document findings",
+            "details": "Record identified vulnerabilities including reentrancy in receive() function",
+            "status": "completed"
+          },
+          {
+            "title": "Fix critical vulnerabilities",
+            "details": "Address reentrancy vulnerability in _distributePendingETH function, unsafe type casting, deprecated SafeMath, and missing access controls",
+            "status": "completed"
+          },
+          {
+            "title": "Re-audit after fixes",
+            "details": "Perform final security review after implementing fixes",
+            "status": "completed"
+          }
+        ],
+        "completion_note": "completed before proof enforcement",
+        "last_update": "2026-02-03T19:30:49+00:00",
+        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/t6/proof.json"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Agent Framework",
+    "description": "Enhance the agent creation and management system",
+    "tasks": [
+      {
+        "id": "t4",
+        "title": "Agent Template System",
+        "assignee": "Spark",
+        "status": "blocked",
+        "subtasks": [
+          {
+            "title": "Create template generator",
+            "details": "Build system for generating agent templates",
+            "status": "active"
+          },
+          {
+            "title": "Implement template marketplace",
+            "details": "Allow sharing and reuse of agent templates",
+            "status": "active"
+          }
+        ],
+        "blocking_reason": "Manually blocked by admin request"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Infrastructure Deployment",
+    "description": "GitHub Pages deployment and hosting management",
+    "tasks": [
+      {
+        "id": "t5",
+        "title": "Deploy to GitHub Pages",
+        "assignee": "GitHub Deployer, Pixel",
+        "status": "completed",
+        "subtasks": [
+          {
+            "title": "Configure GitHub Pages settings",
+            "details": "Set up GitHub Pages deployment in the molt-launch repository with proper branch and folder settings",
+            "status": "completed"
+          },
+          {
+            "title": "Deploy dashboard assets",
+            "details": "Upload dashboard files to GitHub Pages at https://commits777.github.io/molt-launch-dashboard",
+            "status": "completed"
+          },
+          {
+            "title": "Verify dashboard accessibility",
+            "details": "Confirm the GitHub Pages dashboard URL is reachable and functioning properly",
+            "status": "completed"
+          },
+          {
+            "title": "Update DNS and redirects",
+            "details": "Redirect old Cloudflare URLs to new GitHub Pages URL",
+            "status": "completed"
+          }
+        ],
+        "completion_note": "completed before proof enforcement",
+        "last_update": "2026-02-03T19:30:49+00:00",
+        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/t5/proof.json"
+      },
+      {
+        "id": "dashboard-recovery-20260202",
+        "title": "Dashboard Recovery",
+        "assignee": "Watchdog",
+        "status": "completed",
+        "subtasks": [
+          {
+            "title": "Diagnose dashboard unavailability",
+            "details": "Investigate DNS NXDOMAIN error for dashboard URL",
+            "status": "completed"
+          },
+          {
+            "title": "Check cloud infrastructure",
+            "details": "Verify cloudflared and Python dashboard processes are running",
+            "status": "completed"
+          },
+          {
+            "title": "Attempt tunnel restart",
+            "details": "Restart Cloudflare tunnel using cloudflared --url http://localhost:8000, created new tunnel URL: https://railway-lite-debian-ratings.trycloudflare.com",
+            "status": "completed"
+          },
+          {
+            "title": "Verify recovery success",
+            "details": "Confirmed new tunnel URL returns HTTP 200; dashboard now accessible",
+            "status": "completed"
+          }
+        ],
+        "completion_note": "System reported HEALTHY on 2026-02-04T09:42:17Z; dashboard accessible.",
+        "last_update": "2026-02-04T09:57:00Z",
+        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/dashboard-recovery-20260202/proof.json"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Community Engagement",
+    "description": "Drive awareness and support through community interaction",
+    "tasks": [
+      {
+        "id": "t7",
+        "title": "Moltbook Community Outreach",
+        "assignee": "Moltbook Scout",
+        "status": "blocked",
+        "subtasks": [
+          {
+            "title": "Identify relevant discussions",
+            "details": "Search for Molt/Moltbook related discussions on social platforms",
+            "status": "completed"
+          },
+          {
+            "title": "Engage with community",
+            "details": "Respond to posts and initiate conversations about Moltbook",
+            "status": "blocked"
+          },
+          {
+            "title": "Report engagement metrics",
+            "details": "Track and report community engagement KPIs",
+            "status": "active"
+          }
+        ],
+        "blocking_reason": "Manually blocked by admin request"
+      }
+    ]
+  },
+  {
+    "id": "inbox",
+    "name": "Inbox",
+    "description": "Auto-ingested tasks",
+    "tasks": [
+      {
+        "id": "tg-eaca0724",
+        "title": "Reduce OpenClaw memory usage",
+        "assignee": "Spark",
+        "status": "completed",
+        "priority": "High",
+        "source": "telegram",
+        "created_at": "2026-02-03T20:05:49.355316+00:00",
+        "completed_at": "2026-02-03T20:06:30.123456+00:00",
+        "subtasks": []
+      },
+      {
+        "id": "tg-acffda81",
+        "title": "Restart-safety test (telegram intake)",
+        "assignee": "Spark",
+        "status": "blocked",
+        "priority": "Low",
+        "source": "telegram",
+        "created_at": "2026-02-03T20:14:52.629386+00:00",
+        "subtasks": [],
+        "blocking_reason": "Manually blocked by admin request"
+      },
+      {
+        "id": "t12",
+        "title": "Imported proof task t12",
+        "assignee": "Spark",
+        "status": "completed",
+        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/t12/proof.json",
+        "source": "system",
+        "created_at": "2026-02-03T21:43:14.367122+00:00",
+        "last_update": "2026-02-03T21:43:14.367158+00:00"
+      },
+      {
+        "id": "t13",
+        "title": "Imported proof task t13",
+        "assignee": "Spark",
+        "status": "completed",
+        "proof_path": "/home/ian_gerststgrasser/.openclaw/runtime/logs/subagents/t13/proof.json",
+        "source": "system",
+        "created_at": "2026-02-03T21:43:14.367167+00:00",
+        "last_update": "2026-02-03T21:43:14.367171+00:00"
+      }
+    ]
+  }
+]
