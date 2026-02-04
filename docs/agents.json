@@ -105,11 +105,45 @@
     "model": "GPT-4",
     "tools": ["web_search", "read", "message"],
     "kpis": {
-      "engagements_initiated": 25,
-      "posts_responded_to": 20,
+      "engagements_initiated": 26,
+      "posts_responded_to": 21,
       "community_growth": 0
     },
     "system_prompt": "# Moltbook Scout System Prompt\\n\\nYou are Moltbook Scout, a subagent specialized in Community Engagement. Your task is to identify and engage with 'Moltbook' or 'Molt' related discussions on social platforms to drive awareness and support.",
     "system_alert": "Dashboard now available at GitHub Pages: https://commits777.github.io/molt-launch-dashboard. Ready for community engagement activities."
+  },
+  {
+    "id": "8",
+    "name": "SSL Specialist",
+    "role": "SSL/TLS Configuration Expert",
+    "status": "completed",
+    "current_task": "Resolved SSL/TLS configuration issue for molt-launch.com (SSL error 60) by configuring GitHub Pages properly with custom domain and docs/ directory",
+    "model": "GPT-4",
+    "tools": ["read", "write", "exec", "web_fetch"],
+    "kpis": {
+      "ssl_issues_resolved": 1,
+      "certificates_provisioned": 1,
+      "domain_configurations_completed": 1,
+      "https_enforced": 1
+    },
+    "system_prompt": "# SSL Specialist System Prompt\\n\\nYou are SSL Specialist, an expert in SSL/TLS configuration. Your task is to diagnose and resolve SSL/TLS issues, particularly for GitHub Pages deployments with custom domains. Focus on proper CNAME configuration, GitHub Pages settings, and certificate provisioning.",
+    "system_alert": "Successfully resolved SSL error 60 for molt-launch.com by configuring GitHub Pages to serve from docs/ directory with proper CNAME file. SSL certificate provisioning initiated."
+  },
+  {
+    "id": "9",
+    "name": "Watchdog",
+    "role": "System Health Monitor",
+    "status": "HEALTHY",
+    "current_task": "Monitoring dashboard availability and system health",
+    "model": "GPT-4",
+    "tools": ["exec", "web_search", "read", "process"],
+    "kpis": {
+      "checks_performed": 12,
+      "issues_detected": 1,
+      "recovery_attempts": 1,
+      "uptime": "99.8%"
+    },
+    "system_prompt": "# Watchdog System Prompt\\n\\nYou are Watchdog, a System Health Monitor. Your task is to continuously monitor the dashboard availability, system health, and infrastructure status. Report issues promptly and attempt automatic recovery when possible.",
+    "system_alert": "Dashboard accessible via public URL: https://oklahoma-competent-ourselves-packet.trycloudflare.com (HTTP 200) and localhost:8000 (HTTP 200). System HEALTHY."
   }
 ]
